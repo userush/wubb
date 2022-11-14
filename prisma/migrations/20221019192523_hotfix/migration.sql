@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE `user` MODIFY `referred` INTEGER NOT NULL DEFAULT 0,
+    MODIFY `fee_fixed` INTEGER NOT NULL DEFAULT 0;

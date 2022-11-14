@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Font+Awesome+5+Free:wght@400&display=swap");
+
+@layer base {
+  html {
+    @apply scroll-smooth bg-dark snap-y snap-proximity;
+  }
+  body {
+    @apply bg-dark text-shades-10 font-prim;
+  }
+  p {
+    @apply font-prim text-base font-normal leading-loose tracking-wide text-shades-10;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-1-5 py-0-5 border border-shades-5 bg-shades-7 text-shades-5 font-bold w-full focus:outline-none focus:ring-2 focus:ring-shades-5 focus:ring-offset-2 focus:ring-offset-shades-4 ring-opacity-20 cursor-pointer;
+  }
+  .btn--light {
+    @apply border-shades-7 bg-shades-10 text-shades-1 font-bold hover:bg-shades-8 hover:border-shades-6 focus:outline-none focus:ring-2 focus:ring-shades-4 focus:ring-offset-2 focus:ring-offset-shades-3 ring-opacity-20;
+  }
+  .btn--dark {
+    @apply border-shades-3 bg-shades-1 text-shades-10 font-bold hover:bg-shades-2 hover:border-shades-4 focus:outline-none focus:ring-2 focus:ring-shades-2 focus:ring-offset-2 focus:ring-offset-shades-2 ring-opacity-20;
+  }
+  .btn--prim {
+    @apply border-amber-700 bg-amber-500 text-shades-10 font-bold hover:bg-[#de910c] hover:border-amber-700 focus:outline-none focus:ring-2 focus:ring-[#f59f0b30] focus:ring-offset-2 focus:ring-offset-[#bd610534] ring-opacity-20;
+  }
+  .btn--flex-center {
+    @apply flex items-center justify-center;
+  }
+  .btn--sm {
+    @apply px-1 py-0-25;
+  }
+  .btn--flex-between {
+    @apply flex items-center justify-between;
+  }
+  .btn--rounded {
+    @apply rounded-lg;
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed;
+  }
+  .v-seperator {
+    @apply w-[1px] h-full min-h-[30px] bg-shades-3 rounded border-none;
+  }
+  .overlay {
+    @apply w-full h-full absolute bg-dark opacity-60;
+    content: "";
+  }
+}
