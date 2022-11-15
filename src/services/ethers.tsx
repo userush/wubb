@@ -7,8 +7,8 @@ import {
   isProd,
 } from "shared/constants";
 import ChainPrizes from "contracts/ChainPrizes.json";
-import BUSD_dev from "contracts/MOCKBUSD.json";
-import USDT_dev from "contracts/MOCKUSDT.json";
+import BUSD_dev from "contracts/MockBUSD.json";
+import USDT_dev from "contracts/MockUSDT.json";
 import BUSD_prod from "contracts/BUSD.json";
 import USDT_prod from "contracts/USDT.json";
 
