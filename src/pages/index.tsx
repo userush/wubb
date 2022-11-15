@@ -17,7 +17,7 @@ const Chainprizes: NextPage = () => {
       />
       <Layout>
         {!isProd && <Debuger />}
-        <section className="container sm:pt-1 md:pt-3 lg:pt-5">
+        <section className="container pt-2-75 md:pt-3 lg:pt-5">
           <h1 className="text-shades-10 font-extrabold text-2xl mb-0-75">
             No Lose 1 Dollar Game
           </h1>
