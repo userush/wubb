@@ -17,9 +17,13 @@ const SEO = ({ title, description }: SeoProps) => {
         />
         <meta charSet="utf-8" />
         <meta property="image" content="/assets/thumbnail.jpg" />
+        <meta name="image" content="/assets/thumbnail.jpg" />
         <meta property="site_name" content={_APP_NAME} />
+        <meta name="site_name" content={_APP_NAME} />
         <meta property="title" content={`${_APP_NAME} | ${title}`} />
+        <meta name="title" content={`${_APP_NAME} | ${title}`} />
         <meta property="description" content={description} />
+        <meta name="description" content={description} />
         <meta property="og:image" content="/assets/thumbnail.jpg" />
         <meta property="og:site_name" content={_APP_NAME} />
         <meta property="og:title" content={`${_APP_NAME} | ${title}`} />
